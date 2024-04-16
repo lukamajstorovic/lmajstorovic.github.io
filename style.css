@@ -1,103 +1,133 @@
 .navigation-bar {
-    height: 50px;
-    position: relative;
-    border: 3px solid green;
+  height: 50px;
+  position: relative;
 }
 
 .logo {
-    display: inline-block;
-    width: 20%;
+  display: inline-block;
+  width: 20%;
 }
 
 .logo-text {
-    display: inline-block;
+  display: inline-block;
 }
 
 img {
-    display: inline-block;
-    padding-right: 10px;
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    padding-left: 5px;
+  display: inline-block;
+  padding-right: 10px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  padding-left: 5px;
 }
 
 p {
-    display: inline-block;
-    padding-left: 40px;
+  display: inline-block;
+  padding-left: 40px;
 }
 
 .navigation-list {
-    display: inline-block;
-    list-style: none;
-    text-align: center;
-    align-items: center;
-    width: 69%;
-    padding: 0;
+  display: inline-block;
+  list-style: none;
+  text-align: center;
+  align-items: center;
+  width: 69%;
+  padding: 0;
 }
 
 .navigation-list li {
-    display: inline;
-    margin-right: 50px;
+  display: inline;
+  margin-right: 50px;
+}
+
+.navigation-list li a {
+  text-decoration: none;
+  color: black;
+}
+
+.navigation-list li a:hover {
+  color: #5e3bee;
 }
 
 .button-container {
-    display: inline-block;
-    width: 10%;
-    text-align: center;
+  display: inline-block;
+  width: 10%;
+  text-align: center;
 }
 
 .button-container button {
-    align-self: center;
+  align-self: center;
 }
 
 .hamburger-container button {
-    display: none;
-    float: right;
+  display: none;
+  float: right;
+}
+
+#contact-me-li {
+  display: none;
+}
+
+button {
+  padding: 5px 10px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #5e3bee; 
+  border-radius: 5px;
+  color: #5e3bee;
+  background-color: transparent;
+  font-weight: 500;
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 @media (max-width: 865px) {
-    .navigation-list {
-        display: none;
-        position: absolute;
-        top: 50px;
-        left: 0;
-        width: 100%;
-        background-color: #ffffff;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        padding: 20px 0;
-    }
+  .navigation-list {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
+  }
 
-    .navigation-list.active {
-        display: block;
-    }
+  .navigation-list.active {
+    display: block;
+  }
 
-    .navigation-list li {
-        display: block;
-        margin-bottom: 10px;
-    }
+  .navigation-list li {
+    display: block;
+    margin-bottom: 10px;
+  }
 
-    .button-container button {
-        display: none;
-    }
+  .button-container button {
+    display: none;
+  }
 
-    .hamburger-container {
-        padding-right: 20px;
-    }
+  .hamburger-container {
+    padding-right: 20px;
+  }
 
-    .hamburger-container button {
-        display: inline-block;
-        float: right;
-    }
+  .hamburger-container button {
+    display: inline-block;
+    float: right;
+  }
 
-    .logo-text {
-        display: none;
-    }
+  .logo-text {
+    display: none;
+  }
 
-    .navigation-bar.active .navigation-list {
-        display: block;
-    }
+  .navigation-bar.active .navigation-list {
+    display: block;
+  }
+
+  #contact-me-li {
+    display: block;
+  }
 }
-

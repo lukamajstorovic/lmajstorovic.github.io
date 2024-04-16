@@ -1,42 +1,48 @@
 <!DOCTYPE html>
 <html lang="hr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Luka Majstorović</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <nav class="navigation-bar">
-        <div class="logo">
-            <img src="steam-logo-black-transparent.png" width="30px" height="30px" alt="Webpage logo">
-            <p class="logo-text">Luka Majstorović</p>
-        </div>
-        
-        <ul class="navigation-list">
-            <li>
-                Home
-            </li>
-            <li>
-                Portfolio
-            </li>
-            <li>
-                About me
-            </li>
-            <li>
-                Testimonials
-            </li>
-        </ul>
-        
-        <div class="button-container">
-            <button class="contact-btn" alt="Contact me button">Contact me</button>
-        </div>
-        <div class="hamburger-container">
-            <button class="hamburger" alt="Toggle menu">☰</button>
-        </div>
+      <div class="logo">
+        <img
+          src="steam-logo-black-transparent.png"
+          width="30px"
+          height="30px"
+          alt="Webpage logo"
+        />
+        <p class="logo-text">Luka Majstorović</p>
+      </div>
+
+      <ul class="navigation-list">
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">About me</a></li>
+        <li><a href="#">Testimonials</a></li>
+        <li id="contact-me-li"><a href="#">Contact me</a></li>
+      </ul>
+
+      <div class="button-container">
+        <button
+          class="contact-btn"
+          alt="Contact me button"
+          onclick="window.location='http://www.google.com'"
+        >
+          Contact me
+        </button>
+      </div>
+      <div class="hamburger-container">
+        <button class="hamburger" alt="Toggle menu">☰</button>
+      </div>
     </nav>
     <h1>Hello LV1 task</h1>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
