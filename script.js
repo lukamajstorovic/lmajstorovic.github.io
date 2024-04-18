@@ -6,3 +6,13 @@ document.addEventListener("DOMContentLoaded", function () {
     navBar.classList.toggle("active"); // Toggle the 'active' class on the navigation bar
   });
 });
+
+function scrollToContact() {
+  const contactSection = document.getElementById("contact-me");
+
+  if (contactSection) {
+    contactSection.scrollIntoView({
+      behavior: "smooth",
+    });
+  }
+}

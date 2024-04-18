@@ -296,12 +296,12 @@ h1 {
 
 .card {
   width: 200px;
-  background-color: #F5FCFF;
+  background-color: #f5fcff;
   margin: 50px;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 20;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .card:hover {
@@ -316,18 +316,17 @@ h1 {
 }
 
 @media (max-width: 1400px) {
-  
   .text-container {
     align-items: center;
   }
-  
+
   .card-container {
     flex-direction: column;
   }
-  
+
   .card {
     width: 200px;
-    background-color: #F5FCFF;
+    background-color: #f5fcff;
     margin: 10px;
     padding: 20px;
     border-radius: 10px;
@@ -364,7 +363,7 @@ h1 {
     flex-direction: column;
     align-items: center;
   }
-  
+
   .image-contaner img {
     margin: auto;
     width: 90%;
@@ -395,11 +394,11 @@ h1 {
   background-color: white;
   margin: 50px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .portfolio-card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .portfolio-card img {
@@ -427,4 +426,213 @@ h1 {
 .text-and-button-container {
   display: flex;
   flex-direction: row;
+}
+
+@media (max-width: 1200px) {
+  .portfolio-card-container {
+    padding: 0;
+    padding-top: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.testimonials-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f8f8f8;
+}
+
+.testimonials-content-container {
+  align-self: center;
+}
+
+.testimonials-card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonials-card {
+  width: 300px;
+  height: 300px;
+  background-color: white;
+  margin: 50px;
+  border-radius: 10px;
+  border: solid 2px #006b6a;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.testimonials-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.testimonials-card img {
+  width: 100%;
+  position: relative;
+  padding: 0px;
+  padding-top: 30px;
+}
+
+.testimonials-card-bottom {
+  padding: 20px;
+}
+
+.testimonials-card-bottom h2 {
+  color: #006b6a;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: row;
+  padding-top: 10px;
+}
+
+.profile-info img {
+  width: 50px;
+  height: 50px;
+  padding: 0;
+}
+
+.name-and-occupation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 10px;
+}
+
+.name-and-occupation p {
+  margin: 0;
+  padding: 10;
+}
+
+.name-and-occupation > p:first-child {
+  font-weight: 600;
+}
+
+@media (max-width: 1200px) {
+  .testimonials-card-container {
+    padding: 0;
+    padding-top: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  color: #5e3bee;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.input-text,
+.terms {
+  flex: 1;
+}
+
+.input-text p {
+  margin: 5px 0;
+}
+
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #5e3bee;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+  margin-top: 5px;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus,
+textarea:focus {
+  border-color: #482e9d;
+}
+
+select {
+  appearance: none;
+}
+
+.terms label {
+  display: block;
+  margin-top: 5px;
+}
+
+button[type="submit"] {
+  background-color: #5e3bee;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button[type="submit"]:hover {
+  background-color: #482e9d;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.input-text,
+.terms {
+  flex: 1;
+  margin-right: 15px;
+}
+
+.input-text:last-child,
+.terms:last-child {
+  margin-right: 0;
+}
+
+.terms {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.form-header {
+  color: black;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-header p {
+  margin-bottom: 10px;
+}
+
+footer {
+  height: 150px;
+  background-color: #ffffff;
+}
+
+.footer-logo {
+  display: inline-block;
+  width: 20%;
+  align-items: center;
+}
+
+.footer-logo-text {
+  padding-left: 10px;
 }
